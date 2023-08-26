@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  background-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Roboto", sans-serif;
+  /* font-weight: bold; */
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 55px;
+  background-color: black;
+  color: white;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+
+#hv:hover{
+   color: rgb(22, 153, 33);
+   cursor: pointer;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.brand img {
+  width: 40px;
+  padding: 0 8px;
+}
+
+.container {
+  min-height: 65vh;
+  background-color: black;
+  color: rgb(0, 0, 0);
+  display: flex;
+  width: 70%;
+  margin: 23px auto;
+  border-radius: 13px;
+  padding: 20px;
+  background-image: url(Imgs/bg2.jpg);
+}
+
+.bottom {
+  position: sticky;
+  height: 90px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons {
+  margin: 12px 0;
+}
+
+.icons i {
+  cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+}
+
+.icons i:hover {
+  color: rgb(86, 180, 224);
+}
+#progressbar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  /* background-color: rgb(221, 221, 221); */
+  background-color: white;
+  width: 270px;
+  color: black;
+  margin: 12px 0;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.songItem img {
+  width: 50px;
+}
+
+.songItem i {
+  cursor: pointer;
+}
+
+.songItem span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.songItem:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  border: 1px solid;
+  border-color: black ;
+}
+
+.songinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 10vw;
+  margin-top: 15px;
+}
+
+.songinfo img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+#SN{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    margin-left: 5px;
+
+}
+
+.bottom input {
+  height: 1px;
+}
+
+.timestamp i {
+  padding-left: 2px;
+}
+
+h1{
+  color: white;
+}
+
+@media only screen and (max-width:600px) {
+
+    body{
+        width: 100%;
+    }
+
+    nav ul li {
+        padding: 0 5px;
+      }
+
+
+    .songItem{
+        width: 90%;
+    }
+
+    .icons{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+      
+    }
+
+    .songinfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 15vw;
+        /* margin-top: 15px; */
+      }
+    
+    
+}
+@media only screen and (max-width:350px) {
+
+    body{
+        width: 100%;
+    }
+
+    nav ul li {
+        padding: 0 5px;
+      }
+
+
+    .songItem{
+        width: 80%;
+    }
+
+    .icons{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+      
+    }
+
+    .songinfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 15vw;
+        /* margin-top: 15px; */
+      }
+
+      .songItem span {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+      }
+    
+}
+
+@media only screen and (max-width:349px) {
+
+    body{
+        width: 100%;
+    }
+
+    nav ul li {
+        padding: 0 5px;
+      }
+
+      .container{
+        width: 70%;
+        padding: 5px;
+      }
+
+      .songItem i {
+        margin-right: 40%;
+      }
+
+    .songItem{
+        width: 85%;
+    }
+
+    .icons{
+       width: 100%;
+       display: flex;
+       justify-content: cnter;
+      
+    }
+
+    .songinfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 15vw;
+        /* margin-top: 15px; */
+      }
+
+      .songItem span {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+      }
+
+      .songName{
+        font-size: smaller;
+      }
+    
+}
